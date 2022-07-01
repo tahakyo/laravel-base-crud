@@ -37,6 +37,7 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
+        // $new_comic->fill($data);  altra soluzione per salvare gli inputs
         
         $new_comic = new Comic();
         $new_comic->title = $data['title'];
