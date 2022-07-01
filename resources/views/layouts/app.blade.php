@@ -20,7 +20,7 @@
       </li>
     </ul>
   </header>
-    @yield('main_content');
+    @yield('main_content')
 </body>
 
 </html>
