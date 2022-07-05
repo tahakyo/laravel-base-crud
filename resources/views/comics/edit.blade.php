@@ -3,8 +3,9 @@
 @section('main_content')
     <h1>Edit comic</h1>
     <div class="container">
-      <form action="{{ route('comics.update', ['comic'=>$comics_edit->id]) }}">
+      <form action="{{ route('comics.update', ['comic'=>$comics_edit->id]) }}" method="POST">
         @csrf
+        @method('PUT')
         <div class="col-auto mb-3">
             <label for="title" class="form-label">Title</label>
             <input type="text" class="form-control" id="title" name="title" value="{{ $comics_edit->title }}">
