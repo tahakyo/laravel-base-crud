@@ -15,5 +15,6 @@
       <div class="fw-bold">Sale Date:</div>
       <div>{{ $selected_comic->sale_date }}</div>
       <div class="fw-bold">Price: {{ $selected_comic->price }}$</div>
+      <a class="btn btn-primary" href="{{ route('comics.edit', ['comic'=> $selected_comic->id]) }}">Edit</a>
     </div>
 @endsection
